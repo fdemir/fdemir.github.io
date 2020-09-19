@@ -14,13 +14,14 @@
   },
   "dependencies": {
     "@nuxtjs/pwa": "^3.0.0-beta.20",
+    "@nuxtjs/svg": "^0.1.12",
+    "ionicons": "^5.1.2",
     "node-sass": "^4.14.1",
     "nuxt": "^2.13.0",
     "sass-loader": "^10.0.2",
     "vue-flickity": "^1.2.1"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config": "^3.0.0",
     "@nuxtjs/eslint-module": "^2.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.2.0",

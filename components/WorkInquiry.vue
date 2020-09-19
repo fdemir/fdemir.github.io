@@ -9,7 +9,7 @@
           </p>
         </div>
         <div>
-          <f-button class="btn-secondary">LET'S CHAT</f-button>
+          <f-button class="btn-secondary"> LET'S CHAT </f-button>
         </div>
       </div>
     </div>

@@ -8,7 +8,18 @@
             Featured projects, lorem ipsum dolor sit amet...
           </h5>
         </div>
-        <div>deneme</div>
+        <div>
+          <f-button
+            class="btn-outline-secondary action-btn"
+            @click.native="prev"
+            ><ChevronBack
+          /></f-button>
+          <f-button
+            class="btn-outline-secondary action-btn"
+            @click.native="next"
+            ><ChevronForward
+          /></f-button>
+        </div>
       </div>
       <div>
         <flickity ref="flickity" :options="flickityOptions">
@@ -23,9 +34,14 @@
 
 <script>
 import Flickity from 'vue-flickity'
+import ChevronBack from 'ionicons/dist/svg/chevron-back-sharp.svg?inline'
+import ChevronForward from 'ionicons/dist/svg/chevron-forward-sharp.svg?inline'
+
 export default {
   components: {
+    ChevronBack,
     Flickity,
+    ChevronForward,
   },
   data() {
     return {
@@ -37,12 +53,28 @@ export default {
       },
     }
   },
+  methods: {
+    prev() {
+      this.$refs.flickity.previous()
+    },
+    next() {
+      this.$refs.flickity.next()
+    },
+  },
 }
 </script>
 
 <style lang="scss" scoped>
 .works-section {
   padding-bottom: 10rem;
+
+  .action-btn {
+    padding: 0;
+    width: 45px;
+    height: 45px;
+    display: inline-grid;
+    place-items: center;
+  }
 
   .carousel-cell {
     width: 50%;

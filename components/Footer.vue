@@ -9,14 +9,24 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="footer-bottom__item">logo</div>
+      <div class="footer-bottom__item"></div>
       <div class="footer-bottom__item">
         <ul class="footer-nav">
-          <li class="footer-nav__item"><n-link to="/">ABOUT</n-link></li>
-          <li class="footer-nav__item"><n-link to="/">WORKS</n-link></li>
-          <li class="footer-nav__item"><n-link to="/">SERVICES</n-link></li>
-          <li class="footer-nav__item"><n-link to="/">NEWS</n-link></li>
-          <li class="footer-nav__item"><n-link to="/">CONTACT</n-link></li>
+          <li class="footer-nav__item">
+            <n-link to="/">ABOUT</n-link>
+          </li>
+          <li class="footer-nav__item">
+            <n-link to="/">WORKS</n-link>
+          </li>
+          <li class="footer-nav__item">
+            <n-link to="/">SERVICES</n-link>
+          </li>
+          <li class="footer-nav__item">
+            <n-link to="/">NEWS</n-link>
+          </li>
+          <li class="footer-nav__item">
+            <n-link to="/">CONTACT</n-link>
+          </li>
         </ul>
       </div>
       <div class="footer-bottom__item">2020 ALL RIGHTS RESERVED</div>
@@ -30,7 +40,7 @@
   flex-direction: column;
 
   &::after {
-    content: '';
+    content: "";
     display: block;
     width: 100%;
     height: 10px;
@@ -64,7 +74,7 @@
       a {
         text-decoration: none;
         color: inherit;
-        &[href^='mailto'] {
+        &[href^="mailto"] {
           margin-bottom: 15px;
           font-size: 2rem;
         }
