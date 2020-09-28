@@ -1,15 +1,23 @@
 <template>
   <div class="work">
     <div class="work-header">
-      <h4 class="work-header__title">Otokirala</h4>
-      <h4 class="work-header__subtitle">Web Application</h4>
+      <h4 class="work-header__title">{{ data.title }}</h4>
+      <h4 class="work-header__subtitle">{{ data.type }}</h4>
     </div>
     <div
       class="work-content"
-      :style="`background: url(${require('~/assets/images/test-work.png')})`"
+      :style="`background: url(${require('~/assets/images/' + data.image)})`"
     ></div>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    data: Object,
+  },
+}
+</script>
 
 <style lang="scss" scoped>
 .work {

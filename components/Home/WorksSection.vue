@@ -23,8 +23,12 @@
       </div>
       <div>
         <flickity ref="flickity" :options="flickityOptions">
-          <div class="carousel-cell" v-for="x in 4" :key="x">
-            <Work />
+          <div
+            class="carousel-cell"
+            v-for="(item, index) in works"
+            :key="index"
+          >
+            <Work :data="item" />
           </div>
         </flickity>
       </div>
@@ -36,6 +40,29 @@
 import Flickity from 'vue-flickity'
 import ChevronBack from 'ionicons/dist/svg/chevron-back-sharp.svg?inline'
 import ChevronForward from 'ionicons/dist/svg/chevron-forward-sharp.svg?inline'
+
+const works = [
+  {
+    title: 'Otokirala',
+    type: 'Web Application',
+    image: 'otokirala.png',
+  },
+  {
+    title: 'Kamerdam',
+    type: 'Web Application',
+    image: 'kamerdam.jpg',
+  },
+  {
+    title: 'Preminyum',
+    type: 'Web Site',
+    image: 'preminyum.png',
+  },
+  {
+    title: 'Uxdev',
+    type: 'Web Application',
+    image: 'uxdev.png',
+  },
+]
 
 export default {
   components: {
@@ -51,6 +78,7 @@ export default {
         pageDots: false,
         prevNextButtons: false,
       },
+      works,
     }
   },
   methods: {
