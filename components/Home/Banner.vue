@@ -7,9 +7,11 @@
           SOFTWARE DEVELOPER AND MUSICIAN
         </h2>
         <p class="banner-content__desc">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
+          <!-- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
           ducimus sint cumque eveniet repellendus odit enim fugit ducimus sint
-          cumque eveniet....
+          cumque eveniet.... -->
+          Hi. I'm Furkan. I'm passionate about programming, design, music,
+          language and filming. I make fast and responsive web apps.
         </p>
         <div class="banner-content__btn">
           <f-button>LET'S CHAT</f-button>
