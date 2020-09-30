@@ -10,15 +10,18 @@
         </div>
         <div>
           <f-button
-            class="btn-outline-secondary action-btn"
+            variant="outline-secondary"
+            class="action-btn"
             @click.native="prev"
-            ><ChevronBack
+            ><fa :icon="['fas', 'chevron-left']"
           /></f-button>
           <f-button
-            class="btn-outline-secondary action-btn"
+            variant="outline-secondary"
+            class="action-btn"
             @click.native="next"
-            ><ChevronForward
-          /></f-button>
+          >
+            <fa :icon="['fas', 'chevron-right']" />
+          </f-button>
         </div>
       </div>
       <div>
@@ -38,8 +41,6 @@
 
 <script>
 import Flickity from 'vue-flickity'
-import ChevronBack from 'ionicons/dist/svg/chevron-back-sharp.svg?inline'
-import ChevronForward from 'ionicons/dist/svg/chevron-forward-sharp.svg?inline'
 
 const works = [
   {
@@ -51,6 +52,11 @@ const works = [
     title: 'Kamerdam',
     type: 'Web Application',
     image: 'kamerdam.jpg',
+  },
+  {
+    title: 'Rakamon',
+    type: 'Web Site',
+    image: 'rakamon.png',
   },
   {
     title: 'Preminyum',
@@ -66,9 +72,7 @@ const works = [
 
 export default {
   components: {
-    ChevronBack,
     Flickity,
-    ChevronForward,
   },
   data() {
     return {
@@ -77,6 +81,9 @@ export default {
         cellAlign: 'left',
         pageDots: false,
         prevNextButtons: false,
+        breakpoints: {
+          700: {},
+        },
       },
       works,
     }
@@ -93,6 +100,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~/assets/scss/partials/breakpoints';
+
 .works-section {
   padding-bottom: 10rem;
 
@@ -108,6 +117,10 @@ export default {
     width: 50%;
     height: 450px;
     margin-right: 20px;
+
+    @include bp(tablet) {
+      width: 100%;
+    }
   }
 
   &-header {
