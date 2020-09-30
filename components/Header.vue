@@ -9,8 +9,8 @@
         <a href="tel:+380932163298" class="header-info__address"
           >+380 93 216 32 98</a
         >
-        <a href="mailto:frndemir@gmail.com" class="header-info__address"
-          >frndemir@gmail.com</a
+        <a href="mailto:info@furkandemir.dev" class="header-info__address"
+          >info@furkandemir.dev</a
         >
       </div>
     </div>
