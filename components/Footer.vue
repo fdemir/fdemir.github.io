@@ -4,7 +4,7 @@
       <h4 class="stay-connected">Stay Connected</h4>
       <div class="footer-content__info">
         <span class="location">Kharkiv, Ukraine</span>
-        <a href="mailto:frndemir@gmail.com">frndemir@gmail.com</a>
+        <a href="mailto:info@furkandemir.dev">info@furkandemir.dev</a>
         <a href="tel">+380 93 216 32 98</a>
       </div>
     </div>
@@ -40,7 +40,7 @@
   flex-direction: column;
 
   &::after {
-    content: "";
+    content: '';
     display: block;
     width: 100%;
     height: 10px;
@@ -74,7 +74,7 @@
       a {
         text-decoration: none;
         color: inherit;
-        &[href^="mailto"] {
+        &[href^='mailto'] {
           margin-bottom: 15px;
           font-size: 2rem;
         }
