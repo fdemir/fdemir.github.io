@@ -1,5 +1,5 @@
 <template>
-  <button class="btn" :class="customClass">
+  <button class="btn" :class="variant && 'btn-' + variant">
     <slot />
   </button>
 </template>
@@ -7,8 +7,11 @@
 <script>
 export default {
   props: {
-    customClass: { type: String, default: '' }
-  }
+    variant: {
+      type: String,
+      default: 'secondary',
+    },
+  },
 }
 </script>
 
