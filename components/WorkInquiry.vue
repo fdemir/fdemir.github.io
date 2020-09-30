@@ -9,7 +9,9 @@
           </p>
         </div>
         <div>
-          <f-button class="btn-secondary"> LET'S CHAT </f-button>
+          <f-button variant="secondary" class="work-inquiry-box__btn">
+            LET'S CHAT
+          </f-button>
         </div>
       </div>
     </div>
@@ -17,8 +19,22 @@
 </template>
 
 <style lang="scss" scoped>
+@import '~/assets/scss/partials/breakpoints';
+
 .work-inquiry {
   padding-bottom: 10rem;
+
+  @include bp(tablet-sm) {
+    &-box {
+      flex-direction: column;
+      justify-content: center !important;
+      padding: 3rem !important;
+
+      &__desc {
+        padding-bottom: 20px;
+      }
+    }
+  }
 
   &-box {
     margin: 0 auto;

@@ -14,7 +14,9 @@
           language and filming. I make fast and responsive web apps.
         </p>
         <div class="banner-content__btn">
-          <f-button>LET'S CHAT</f-button>
+          <a href="#footer">
+            <f-button>LET'S CHAT</f-button>
+          </a>
         </div>
       </div>
       <div class="banner-content__img-col">
@@ -31,6 +33,10 @@
   min-height: calc(100vh - 90px);
   width: 100%;
   display: grid;
+
+  @include bp(tablet) {
+    height: 100vh;
+  }
 
   &-content {
     display: grid;

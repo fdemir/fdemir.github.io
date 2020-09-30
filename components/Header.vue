@@ -1,6 +1,5 @@
 <template>
   <div class="header">
-    <!-- <div><h3 class="header-title">Furkan</h3></div> -->
     <div class="header-content container">
       <span class="header-desc"
         >Web <br />
@@ -15,12 +14,6 @@
         >
       </div>
     </div>
-    <!-- <div class="header-nav">
-      <div class="header-nav__icon">
-        <div></div>
-        <div></div>
-      </div>
-    </div> -->
   </div>
 </template>
 
@@ -29,11 +22,7 @@
 
 .header {
   width: 100%;
-  // display: inline-grid;
-  // grid-template-columns: 1fr 4fr 1fr;
   height: 90px;
-  // padding: 0 3rem;
-  // align-items: center;
 
   @include bp(tablet) {
     display: none;

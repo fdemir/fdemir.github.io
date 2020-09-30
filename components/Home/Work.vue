@@ -20,6 +20,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~/assets/scss/partials/breakpoints';
+
 .work {
   width: 100%;
   height: 100%;
@@ -30,6 +32,13 @@ export default {
   justify-content: flex-end;
   align-items: flex-end;
   overflow: hidden;
+
+  @include bp(mobile) {
+    &-content {
+      width: 100% !important;
+      border-radius: 0 !important;
+    }
+  }
 
   &-content {
     width: 80%;

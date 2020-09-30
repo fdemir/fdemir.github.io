@@ -1,5 +1,6 @@
 <template>
   <div class="footer">
+    <a name="footer"></a>
     <div class="footer-content">
       <h4 class="stay-connected">Stay Connected</h4>
       <div class="footer-content__info">
@@ -35,9 +36,27 @@
 </template>
 
 <style lang="scss" scoped>
+@import '~/assets/scss/partials/breakpoints';
+
 .footer {
   display: flex;
   flex-direction: column;
+
+  @include bp(tablet-sm) {
+    &-bottom {
+      height: auto !important;
+      grid-template-columns: 1fr !important;
+
+      &__item {
+        padding-bottom: 1rem;
+        justify-content: center !important;
+      }
+    }
+
+    &-nav {
+      flex-direction: column;
+    }
+  }
 
   &::after {
     content: '';
