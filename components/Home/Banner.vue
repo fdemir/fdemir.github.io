@@ -11,7 +11,7 @@
           ducimus sint cumque eveniet repellendus odit enim fugit ducimus sint
           cumque eveniet.... -->
           Hi. I'm Furkan. I'm passionate about programming, design, music,
-          language and filming. I make fast and responsive web apps.
+          language and filming. I make fast and compatible apps.
         </p>
         <div class="banner-content__btn">
           <a href="#footer">
