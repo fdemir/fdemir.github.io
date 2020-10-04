@@ -34,7 +34,7 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [],
+  plugins: ['~/plugins/ga.client.js'],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -52,9 +52,7 @@ export default {
       {
         component: 'fa',
         icons: {
-          icons: {
-            solid: ['faChevronLeft', 'faChevronRight'],
-          },
+          solid: ['faChevronLeft', 'faChevronRight'],
         },
       },
     ],
