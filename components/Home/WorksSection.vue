@@ -46,12 +46,12 @@ const works = [
   {
     title: 'Otokirala',
     type: 'Web Application',
-    image: 'otokirala.png',
+    image: 'otokirala.webp',
   },
   {
     title: 'Kamerdam',
     type: 'Web Application',
-    image: 'kamerdam.jpg',
+    image: 'kamerdam.webp',
   },
   {
     title: 'Rakamon',
@@ -61,7 +61,7 @@ const works = [
   {
     title: 'Preminyum',
     type: 'Web Site',
-    image: 'preminyum.png',
+    image: 'preminyum.webp',
   },
   {
     title: 'Uxdev',

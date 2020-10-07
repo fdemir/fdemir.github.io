@@ -20,7 +20,7 @@
         </div>
       </div>
       <div class="banner-content__img-col">
-        <img src="~/assets/images/banner.png" class="banner-img" alt="" />
+        <img src="~/assets/images/banner.webp" class="banner-img" alt="" />
       </div>
     </div>
   </div>
