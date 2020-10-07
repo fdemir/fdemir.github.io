@@ -18,6 +18,7 @@
     "@nuxtjs/svg": "^0.1.12",
     "node-sass": "^4.14.1",
     "nuxt": "^2.13.0",
+    "nuxt-lazy-load": "^1.2.4",
     "sass-loader": "^10.0.2",
     "vue-flickity": "^1.2.1"
   },
