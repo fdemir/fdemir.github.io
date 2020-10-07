@@ -56,12 +56,7 @@ export default {
         },
       },
     ],
-    '@aceforth/nuxt-optimized-images',
   ],
-
-  optimizedImages: {
-    optimizeImages: true,
-  },
 
   /*
    ** Nuxt.js modules
