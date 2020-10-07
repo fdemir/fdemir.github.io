@@ -56,7 +56,7 @@ const works = [
   {
     title: 'Rakamon',
     type: 'Web Site',
-    image: 'rakamon.png',
+    image: 'rakamon.webp',
   },
   {
     title: 'Preminyum',
@@ -66,7 +66,7 @@ const works = [
   {
     title: 'Uxdev',
     type: 'Web Application',
-    image: 'uxdev.png',
+    image: 'uxdev.webp',
   },
 ]
 
