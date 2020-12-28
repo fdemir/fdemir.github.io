@@ -1,36 +1,28 @@
 {
-  "name": "frndmr.github.io",
+  "name": "furkandemir.dev",
   "version": "1.0.0",
-  "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "export": "nuxt export",
-    "serve": "nuxt serve",
-    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "lint": "yarn lint:js"
-  },
-  "dependencies": {
-    "@fortawesome/free-solid-svg-icons": "^5.15.0",
-    "@nuxtjs/pwa": "^3.0.0-beta.20",
-    "@nuxtjs/svg": "^0.1.12",
-    "node-sass": "^4.14.1",
-    "nuxt": "^2.13.0",
-    "nuxt-lazy-load": "^1.2.4",
-    "sass-loader": "^10.0.2",
-    "vue-flickity": "^1.2.1"
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "sirv public"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-module": "^2.0.0",
-    "@nuxtjs/fontawesome": "^1.1.2",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.2.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-nuxt": "^1.0.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "prettier": "^2.0.5",
-    "yarn": "^1.22.10"
+    "@rollup/plugin-commonjs": "^16.0.0",
+    "@rollup/plugin-node-resolve": "^10.0.0",
+    "node-sass": "^5.0.0",
+    "rollup": "^2.3.4",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "svelte": "^3.0.0",
+    "svelte-postcss": "^1.0.7",
+    "svelte-preprocess": "^4.6.1"
+  },
+  "dependencies": {
+    "rollup-plugin-includepaths": "^0.2.4",
+    "sass": "^1.30.0",
+    "sirv-cli": "^1.0.0",
+    "svelte-routing": "^1.4.2"
   }
 }
